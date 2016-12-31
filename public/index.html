@@ -1,0 +1,272 @@
+include plain.html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <title>ricazo.pe</title>
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  </head>
+
+  <body>
+    <nav class="red accent-2" role="navigation">
+      <div class="nav-wrapper container">
+        <a id="logo-container" href="#" class="ricazo-ht brand-logo white-text ">Ricazo Perú</a>
+        <ul class="right hide-on-med-and-down">
+          <li><a class="white-text" onclick="go2Caracteristicas()">¿Por qué Ricazo?</a></li>
+          <li><a class="white-text" onclick="go2Productos()">Nuestros productos</a></li>
+          <li><a class="white-text" onclick="go2Cultura()" >Cultura Ricazo</a></li>
+        </ul>
+
+        <ul id="nav-mobile" class="side-nav">
+          <h1 class="ricazo-ht header center red-text text-accent-2">Ricazo</h1>
+          <h5 class="ricazo-ht header center red-text text-accent-2">Perú</h5>
+          <li><a onclick="go2Caracteristicas()">¿Por qué Ricazo?</a></li>
+          <li class="no-padding">
+            <ul class="collapsible collapsible-accordion">
+              <li>
+                <a class="collapsible-header" onclick="go2Productos()">Nuestros Productos<i class="material-icons">arrow_drop_down</i></a>
+                <div class="collapsible-body">
+                  <ul>
+                    <li><a href="#!">GoRicazo</a></li>
+                    <li><a href="#!">CampusRicazo</a></li>
+                    <li><a href="#!">HomeRicazo </a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li><a onclick="go2Cultura()">Cultura Ricazo</a></li>
+        </ul>
+        <a href="#" data-activates="nav-mobile" class="button-collapse white-text"><i class="material-icons">menu</i></a>
+      </div>
+    </nav>
+    <div id="index-banner" class="parallax-container">
+      <div class="section no-pad-bot">
+        <div class="container">
+          <br><br>
+          <h1 class="ricazo-ht header center white-text text-accent-2">Ricazo Perú</h1>
+          <div class="row center">
+            <h5 class="header col s12 light">Comida bien peruana en tus manos</h5>
+          </div>
+          <div class="row center">
+            <a href="#" id="download-button" class="btn-large waves-effect waves-light red accent-2">Comer ahora</a>
+          </div>
+          <br><br>
+        </div>
+      </div>
+      <div class="parallax"><img src="img/rocoto.jpg" alt="Rocoto Relleno"></div>
+    </div>
+
+    <div class="container">
+      <div class="section">
+
+        <!--   Icon Section   -->
+        <div class="row">
+          <h5 id="caracteristicas" class="ricazo-ht center">¿Por qué comer Ricazo?</h5>
+          <div class="col s12 m4">
+            <div class="icon-block">
+              <h2 class="center red-text text-accent-2"><i class="material-icons">shopping_cart</i></h2>
+              <h5 class="center">Variado</h5>
+              <p class="light justify-content">En Ricazo sabemos que te encanta la
+                variedad, gustar de opciones diferentes cada día. Por eso contamos
+                con la más amplia variedad de productos al alcance de tus
+                manos. Elige los que más te gusten y pídelos en un clic <a class="ricazo-ht red-text text-accent-2">aquí.</a></p>
+            </div>
+          </div>
+
+          <div class="col s12 m4">
+            <div class="icon-block">
+              <h2 class="center red-text text-accent-2"><i class="material-icons">room</i></h2>
+              <h5 class="center">Cómodo</h5>
+              <p class="light justify-content">Entendemos que caminar 20 cuadras para ir a comer
+                puede ser tedioso. En Ricazo queremos cambiar esto, y que puedas comer lo más
+                rico posible. Por eso te llevamos la comida al lugar donde estés.</p>
+            </div>
+          </div>
+
+          <div class="col s12 m4">
+            <div class="icon-block">
+              <h2 class="center red-text text-accent-2"><i class="material-icons">query_builder</i></h2>
+              <h5 class="center">A tiempo</h5>
+              <p class="light justify-content">Sabemos que tu tiempo es valioso y que no puedes
+                 esperar más. Por eso te indicamos exactamente en cuanto tiempo llegará
+                 tu comida. Nuestros <a id="go2Vendor" class="ricazo-ht red-text text-accent-2">
+                 GoRicazos</a> están 100% capacitados y hacen
+                 esto posible.
+                </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+  </div>
+  <div id="productos" class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h3 class="header col s12 light">Productos de la región, para la región</h3>
+        </div>
+      </div>
+      <div class="parallax"><img src="img/lomazo.jpg" alt="Unsplashed background img 2"></div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <h4 class="center">Nuestros Productos</h4>
+      <div class="col s12 m6">
+        <div class="card medium">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="img/seller.png">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">GoRicazo<i class="material-icons right">more_vert</i></span>
+            <p><a href="#">¿Pensando en hacer delivery? En GoRicazo, puedes ofrecer la comida que cocinas y recibir pedidos
+               en línea para su delivery.</a></p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">GoRicazo<i class="material-icons right">close</i></span>
+            <p>¿Pensando en hacer delivery? En GoRicazo, puedes ofrecer la comida que cocinas y recibir pedidos
+               en línea para su delivery. Esta plataforma está desarrollada con amor
+               para nuestros, GoRicazos, los cuales son restaurantes locales y
+               cocineros independientes, que buscan ampliar su mercado, ordenar
+               sus ventas y sistematizar su empresa. <a class="ricazo-ht red-text text-accent-2">¡Comienza ahora!</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6">
+        <div class="card medium">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="img/buyer.png">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Campus Ricazo<i class="material-icons right">more_vert</i></span>
+            <p><a href="#">¿Estudiando y con hambre? Tranquilo, te llevaremos la comida que quieras.
+              En Campus Ricazo puedes pedir comida a delivery dentro del campus.</a></p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Campus Ricazo<i class="material-icons right">close</i></span>
+            <p>¿Estudiando y con hambre? Tranquilo, te llevaremos la comida que quieras.
+              En Campus Ricazo puedes pedir comida a delivery dentro del campus.
+              ¿Por qué Campus Ricazo?
+              Somos universitarios, y tenemos muy claro que nuestra tiempo y dinero
+              es muy valioso. Por ello, en Campus Ricazo puedes pedir la comida que
+              desees y te la llevamos a donde estés en el tiempo acordado. Campus Ricazo
+              ya se encuentra activo en la PUCP. Queremos llegar a todos los campus
+              universitarios de Perú y Latinoamérica. ¿Quieres que haya uno en tu
+              universidad ? Sólo haz el pedido <a class="ricazo-ht red-text text-accent-2">aquí</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6">
+        <div class="card medium">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="img/home.png">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Home Ricazo<i class="material-icons right">more_vert</i></span>
+            <p><a href="#">¿En Casa y con hambre? No sufras y come Ricazo.
+              En Home Ricazo puedes pedir comida a delivery a la puerta de tu hogar.</a></p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Home Ricazo<i class="material-icons right">close</i></span>
+            <p>¿En Casa y con hambre? No sufras y come Ricazo.
+              En Home Ricazo puedes pedir comida a delivery a la puerta de tu hogar.
+              Sabemos que en casa hay muchas responsabilidades y que a veces
+              llegan las 12 y no has cocinado aún. Despreocúpate y pide tu
+              comida en Home Ricazo. En Home Ricazo podrás encontrar la oferta más amplia
+              del mercado: Restaurantes locales y cocineros independientes cerca a ti. Pare
+              de sufrir y come Ricazo<a class="ricazo-ht red-text text-accent-2">aquí</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6">
+        <div class="card medium">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="img/worker.png">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Ricazo Office<i class="material-icons right">more_vert</i></span>
+            <p><a href="#">Después de un día agotador, ya es hora de comer. En Ricazo Office,
+              puedes pedir o reservar tu almuerzo y llegará a la hora indicada directo a tu oficina.</a></p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">GoRicazo<i class="material-icons right">close</i></span>
+            <p>Después de un día agotador, ya es hora de comer. En Ricazo Office, puedes pedir la comida
+              que desees y llegará directo a tu oficina, en el tiempo acordado, porque sabemos que tu tiempo es
+              valioso y que las reuniones no pueden esperar. Así que pide en Ricazo Office ahora!<a class="ricazo-ht red-text text-accent-2">¡Comienza ahora!</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div id="cultura_ricazo" class="parallax-container valign-wrapper">
+      <div class="section no-pad-bot">
+        <div class="container">
+          <div class="row center">
+            <h3 class="header col s12 light">Compra local, compra ricazo</h3>
+          </div>
+        </div>
+        <div class="parallax"><img src="img/filete.jpg" alt="Unsplashed background img 2"></div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="section">
+        <div class="row">
+          <div class="col s12">
+            <h3><i class="mdi-content-send brown-text"></i></h3>
+            <h4 class="center">Cultura Ricazo</h4>
+            <p class="justify-content light">En Ricazo Perú estamos comprometidos
+              con el desarrollo de las PYMES culinarias del país. De ahí nuestro esfuerzo
+              por entregar a la comunidad, una plataforma en línea en la que se pueda
+              comprar comida de restaurantes locales y cocineros independientes. Con esta objetivo,
+              Ricazo provee a estos emprendedores una herramienta de venta ordenado,
+              con un mayor alcance y con tecnología de punta, que les permita
+              ser competentes con el mercado. Actualmente, el sistema se encuentra trabajando
+              dentro de la Universidad Católica, beneficiando a más 15 mil estudiantes.
+              Nuestra visión es expandirnos por todos los campus universitarios del Perú y Sudamérica.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  <footer class="page-footer red accent-2">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Ricazo Perú</h5>
+          <p class="grey-text text-lighten-4"> Comida bien peruana en tus manos.</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Enlaces útiles</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="#!">Términos y condiciones</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Equipo</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">GoRicazo</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Campus Ricazo</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      © 2017 Copyright - Ricazo Perú
+      <a class="grey-text text-lighten-4 right" href="#!">Acerca de Ricazo</a>
+      </div>
+    </div>
+  </footer>
+
+
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="js/init.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/rscript.js"></script>
+  </body>
+</html>
